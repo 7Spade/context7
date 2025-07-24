@@ -1,8 +1,4 @@
-# fly.toml app configuration file generated for context7 on 2025-07-24T07:36:55Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
+# fly.toml app configuration file for context7
 app = 'context7'
 primary_region = 'nrt'
 
@@ -21,8 +17,7 @@ primary_region = 'nrt'
   cpus = 1
   memory_mb = 512
 
-
 [services.concurrency]
   type = "connections"
-  hard_limit = 25
-  soft_limit = 20
+  hard_limit = 100
+  soft_limit = 80
