@@ -16,7 +16,7 @@ primary_region = 'nrt'
   min_machines_running = 1
   processes = ['app']
 
-[[vm]]
+[vm]
   memory = '512mb'
   cpu_kind = 'shared'
   cpus = 1
